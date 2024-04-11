@@ -15,10 +15,10 @@ do{
 
     cout<<"Enter operand: "<<endl
         <<"('+' --> ADDITION"<<endl
-        <<"('-' ---> SUBTRACTION)"<<endl
-        <<"('*' --> MULTIPLICATION)"<<endl
-        <<"('/' --> DIVISION)"<<endl
-        <<"('E' --> EXIT)"<<endl;
+        <<"'-' ---> SUBTRACTION"<<endl
+        <<"'*' --> MULTIPLICATION"<<endl
+        <<"'/' --> DIVISION"<<endl
+        <<"'E' --> EXIT)"<<endl;
 
     cin>>choice;
 
@@ -37,7 +37,11 @@ do{
             break;
         }
         case '/':{
-            cout<<"Performing Division: "<<num1/num2<<endl;
+            if(num2!=0){
+                cout<<"Performing Division: "<<num1/num2<<endl;
+            }else{
+                cout<<"Error division by zero! "<<endl;
+            }
             break;
         }
         case 'E':{
