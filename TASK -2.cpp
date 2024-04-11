@@ -2,18 +2,22 @@
 
 using namespace std;
 
-int main(){
-    char choice;
-    int num1,num2;
-
-do{
+void getinput(int &num1, int &num2){
     cout<<"Enter first number: "<<endl;
     cin>>num1;
 
     cout<<"Enter second number: "<<endl;
     cin>>num2;
 
-    cout<<"Enter operand: "<<endl
+}
+
+int main(){
+    char choice;
+    int num1,num2;
+
+do{
+    
+    cout<<"Enter choice: "<<endl
         <<"('+' --> ADDITION"<<endl
         <<"'-' ---> SUBTRACTION"<<endl
         <<"'*' --> MULTIPLICATION"<<endl
@@ -25,18 +29,22 @@ do{
     switch(choice){
 
         case '+':{
+            getinput(num1,num2);            
             cout<<"Performing Addition: "<<num1+num2<<endl;
             break;
         }
         case '-':{
+            getinput(num1,num2);
             cout<<"Performing Subtraction: "<<num1-num2<<endl;
             break;
         }
         case '*':{
+            getinput(num1,num2);
             cout<<"Performing Multiplication: "<<num1*num2<<endl;
             break;
         }
         case '/':{
+            getinput(num1,num2);
             if(num2!=0){
                 cout<<"Performing Division: "<<num1/num2<<endl;
             }else{
