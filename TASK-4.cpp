@@ -30,7 +30,7 @@ public:
             }
         }
     void markcompleted(int index){
-        if(index >= 1 && index < nooftasks){
+        if(index >= 1 && index <= nooftasks){
             completed[index - 1] = true;
             cout<<"Task marked as completed "<<endl;
         }else{
