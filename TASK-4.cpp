@@ -58,12 +58,12 @@ int main(){
     int taskIndex;
 
     do {
-        cout << "\nMenu:\n";
-        cout << "1. Add Task\n";
-        cout << "2. View Tasks\n";
-        cout << "3. Mark Task as Completed\n";
-        cout << "4. Remove Task\n";
-        cout << "5. Exit\n";
+        cout << "Menu:"<<endl;
+        cout << "1. Add Task"<<endl;
+        cout << "2. View Tasks"<<endl;
+        cout << "3. Mark Task as Completed"<<endl;
+        cout << "4. Remove Task"<<endl;
+        cout << "5. Exit"<<endl;;
         cout << "Enter your choice: ";
         cin >> choice;
 
