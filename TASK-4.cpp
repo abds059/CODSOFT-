@@ -39,7 +39,7 @@ public:
     }
     void removetask(int index){
         if(index>=1 && index < nooftasks){
-            for (int i = index - 1; i < nooftasks - 1; ++i) {
+            for (int i = index - 1; i <= nooftasks - 1; ++i) {
             tasks[i] = tasks[i + 1];
             completed[i] = completed[i + 1];
         }
